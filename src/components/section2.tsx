@@ -7,7 +7,7 @@ import styles from "../styles/section2.module.css";
 import CardComp from "./card";
 
 const satoshi = localFont({ src: "../../public/fonts/Satoshi-Regular.woff2" });
-const gambettaItalic = localFont({ src: "../../public/Fonts/Gambetta-Italic.woff2" });
+const gambettaItalic = localFont({ src: "../../public/fonts/Gambetta-Italic.woff2" });
 
 export default function Section2() {
     return (
