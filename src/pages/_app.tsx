@@ -8,9 +8,6 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <SSRProvider>
-   
-        
-
         <Component {...pageProps} />
       </SSRProvider>
     </>
