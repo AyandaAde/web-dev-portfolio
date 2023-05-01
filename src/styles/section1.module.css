@@ -1,0 +1,60 @@
+.p {
+ 
+
+  /* text/meta */
+
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+
+  /* identical to box height, or 21px */
+
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+
+  /* text/muted */
+
+  color: rgba(218, 197, 167, 0.6);
+
+}
+
+.h4 {
+
+  /* heading/h4 uppercase */
+
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+
+  /* or 31px */
+
+  letter-spacing: 1px;
+
+
+  /* text/default */
+
+  color: #dac5a7;
+
+  /* Inside auto layout */
+
+}
+
+.p2 {
+  
+
+  /* text/default */
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 180%;
+  /* or 29px */
+
+  /* text/muted */
+
+  color: rgba(218, 197, 167, 0.6);
+
+  /* Inside auto layout */
+
+}

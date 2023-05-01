@@ -1,0 +1,21 @@
+.icon {
+  padding: 8px 12px;
+
+  width: 46px;
+  height: 46px;
+
+  /* background/muted */
+
+  background: rgba(218, 197, 167, 0.05);
+  /* border/default */
+
+  border: 1px solid rgba(218, 197, 167, 0.15);
+  /* blur/default */
+
+  backdrop-filter: blur(15px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 500px;
+  margin: 5px;
+}
+

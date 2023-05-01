@@ -1,0 +1,17 @@
+.h2 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 110%;
+  /* or 70px */
+
+  /* text/default */
+
+  color: #dac5a7;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}

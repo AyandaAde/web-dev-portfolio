@@ -1,0 +1,61 @@
+.div {
+  box-sizing: border-box;
+
+  /* Auto layout */
+  text-align: left;
+  padding: 48px;
+  gap: 32px;
+  isolation: isolate;
+
+  /* height: 435px; */
+
+  /* background/muted */
+
+  background: rgba(218, 197, 167, 0.05);
+  /* border/default */
+
+  border: 1px solid rgba(218, 197, 167, 0.15);
+  /* blur/default */
+
+  backdrop-filter: blur(15px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 2px;
+}
+
+.time {
+
+  padding: 8px;
+ 
+  position: absolute;
+    height:32px;
+  right: 20px;
+  top: 20px;
+
+  /* background/muted */
+
+  background: rgba(218, 197, 167, 0.05);
+  /* border/default */
+
+  border: 1px solid rgba(218, 197, 167, 0.15);
+  /* blur/default */
+
+  backdrop-filter: blur(15px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 2px;
+
+}
+
+.ul{
+    list-style: none;
+    padding: 0;
+}
+
+.ul li::before{
+    content: "\2022";
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    
+}

@@ -1,0 +1,72 @@
+.h1 {
+  width: 90vw;
+
+
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 160px;
+  line-height: 100%;
+  /* or 160px */
+
+  text-align: center;
+
+  /* text/default */
+
+  color: #dac5a7;
+}
+
+.p {
+  width: 60vw;
+
+
+  /* text/xlarge */
+
+  font-family: "Chillax";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 150%;
+  /* or 36px */
+
+  text-align: center;
+
+  /* text/muted */
+
+  color: rgba(218, 197, 167, 0.6);
+}
+
+@media screen and (max-width: 702px) {
+    .h1{
+        font-size: 100px;
+    }
+
+    .p{
+        font-size: 20px;
+
+    }
+    
+}
+
+@media screen and (max-width: 515px) {
+    .h1{
+        font-size: 70px;
+    }
+
+    .p{
+        font-size: 18px;
+    }
+
+    
+}
+
+@media screen and (max-width: 360px) {
+    .h1{
+        font-size: 60px;
+    }
+
+    .p{
+        font-size: 17px;
+    }
+    
+}

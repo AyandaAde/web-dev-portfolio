@@ -1,0 +1,13 @@
+.carousel {
+  border: 1px solid rgba(218, 197, 167, 0.15);
+  background: rgba(218, 197, 167, 0.1);
+
+}
+
+.carousel h1{
+    font-size: 13px;
+    /* identical to box height, or 21px */
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+}

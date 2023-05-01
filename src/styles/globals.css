@@ -3,25 +3,93 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
+  /* --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255; */
+
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
+    /* --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0; */
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+
 }
+
+#basic-nav-dropdown{
+  color:  #DAC5A7;
+  width: 65px;
+  height: 21px;
+
+
+}
+
+#button{
+  background: #DAC5A7;
+  border-radius: 2px;
+  width: 111px;
+  height: 41px;
+  position: relative;
+  left:95px;
+  color: #0E0E0E;
+  border: #DAC5A7;
+
+}
+
+@media screen and (max-width: 991px) {
+  #button{
+    left:-25px;
+    top: 15px;
+  }
+  
+}
+
+.dropdown-menu{
+  
+  background: rgba(218, 197, 167, 0.05);
+  /* border/default */
+
+  border: 1px solid rgba(218, 197, 167, 0.15);
+  /* blur/default */
+
+  backdrop-filter: blur(15px);
+  /* Note: backdrop-filter has minimal browser support */
+
+
+}
+
+.backdrop{
+  border: 1px solid rgba(218, 197, 167, 0.15);
+  background: rgba(218, 197, 167, 0.05);
+  backdrop-filter: blur(15px);
+
+}
+
+.card-border{
+  border: "1px solid rgba(255, 255, 255, 0.15)";
+}
+
+.muted-text{
+  color:rgba(218, 197, 167, 0.6);
+}
+
+.link{
+  color: rgba(218, 197, 167, 0.6);
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.link:hover{
+  color:  #dac5a7;
+
+}
+
+

@@ -1,0 +1,34 @@
+.div {
+  box-sizing: border-box;
+
+  /* Auto layout */
+  text-align: left;
+  padding: 38px;
+  gap: 32px;
+  isolation: isolate;
+  width: 500px;
+  height: 455px;
+
+  /* height: 435px; */
+
+  /* background/muted */
+
+  background: rgba(218, 197, 167, 0.05);
+  /* border/default */
+
+  border: 1px solid rgba(218, 197, 167, 0.15);
+  /* blur/default */
+
+  backdrop-filter: blur(15px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 2px;
+}
+
+@media screen and (max-width: 550px){
+    .div{
+        width: 93vw;
+        height:auto;
+    }
+}
+
