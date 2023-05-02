@@ -187,8 +187,8 @@ export default function Section3() {
                     <TimelineContent></TimelineContent>
                 </TimelineItem>
             </Timeline></motion.div>
-            <Grid2 container spacing={2} sx={{ position: "relative", display: { md: "none" } }}>
-                <Grid2 sx={{ width: { xs: "100vw", sm: "80vw" }, display: "flex", flexDirection: "column", alignItems: "center" }}>
+            <Grid2 container sx={{ position: "relative", display: { md: "none" }, margin:"0", padding: "0"}}>
+                <Grid2 sx={{ width: { xs: "90vw", sm: "90vw" }, display: "flex", flexDirection: "column", alignItems: "center" }}>
                     <div style={{ position: "relative", marginBottom: "10px", background: "rgba(218, 197, 167, 0.05)", width: "40px", height: "40px", border: "1px solid rgba(218, 197, 167, 0.15)", borderRadius: "500px", padding: " 8px 8px" }}>
                         <p className={`${satoshi.className} text=[13px] tracking-[1.5px] text-beige`}>01</p>
                     </div>

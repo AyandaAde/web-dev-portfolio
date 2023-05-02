@@ -12,7 +12,8 @@ const gambettaLightItalic = localFont({src:"../../public/fonts/Gambetta-LightIta
 const chillax = localFont({src: "../../public/fonts/Chillax-Regular.woff2"});
 
 export default function Section4(){
-    const large = useMediaQuery("(min-width:1188px)")
+    const large = useMediaQuery("(min-width:1188px)");
+    const mid = useMediaQuery("(min-width:900px)");
     return(
         <Box>
             <Grid2 spacing={3} container sx={{justifyContent: "center", margintop:{xs:"50px", md:"0"}, gap:"20px"}}>
@@ -34,7 +35,7 @@ export default function Section4(){
                     /></motion.div>
                 </Grid2>
                 <Grid2>
-                <motion.div initial="initial" whileInView="whileInView" variants={large ? fadeRight : fadeLeft} transition={{duration:1}} className="p-0"><Card4
+                <motion.div initial="initial" whileInView="whileInView" variants={fadeRight} transition={{duration:1}} className="p-0"><Card4
                     image="logo7.svg"
                     width = {116.67}
                     height = {25}
@@ -60,7 +61,7 @@ export default function Section4(){
                     </Grid2>
                <Grid2 container spacing={3} sx={{padding:"0", display: "flex", flexDirection: "column"}}>
                <Grid2>
-               <motion.div initial="initial" whileInView="whileInView" variants={fadeLeft} transition={{duration:1, delay:0.5}} className="p-0"><Card5
+               <motion.div initial="initial" whileInView="whileInView" variants={mid ? fadeLeft : fadeRight} transition={{duration:1, delay:0.5}} className="p-0"><Card5
                     image="logo (5).svg"
                     width = {23.64}
                     height = {20}
@@ -86,7 +87,7 @@ export default function Section4(){
                 </Grid2>
                
                 <Grid2>
-                <motion.div initial="initial" whileInView="whileInView" variants={fadeLeft} transition={{duration:1}} className="p-0"><Card5
+                <motion.div initial="initial" whileInView="whileInView" variants={mid ? fadeLeft : fadeRight} transition={{duration:1}} className="p-0"><Card5
                     image="logo9.svg"
                     width = {79.33}
                     height = {20}
