@@ -47,25 +47,25 @@ export default function Section2() {
                 <Grid2 container spacing={2} sx={{justifyContent:"center"}}>
                     <Grid2>
                     <motion.div initial="initial" whileInView="whileInView" variants={fadeRight} transition={small ? {delay:0.5, duration:1} : {duration:1}} className="p-0"><CardComp
-                            image = "/image (2).png"
+                            image = "/Image (2).png"
                             title="Space"
                             buttonText="WEB DESIGN" /></motion.div>
                     </Grid2>
                     <Grid2>
                     <motion.div initial="initial" whileInView="whileInView" variants={xSmall ? fadeLeft : fadeRight} transition={small ? {delay:0.5, duration:1} : {duration:1}} className="p-0"> <CardComp
-                            image = "/image (3).png"
+                            image = "/Image (3).png"
                             title="Nova"
                             buttonText="WEB DESIGN" /></motion.div>
                     </Grid2>
                    <Grid2>
                    <motion.div initial="initial" whileInView="whileInView" variants={fadeRight} transition={{duration:1}} className="p-0"> <CardComp
-                            image = "/image (4).png"
+                            image = "/Image (4).png"
                             title="Sonic"
                             buttonText="WEB DESIGN" /></motion.div>
                     </Grid2>
                    <Grid2>
                    <motion.div initial="initial" whileInView="whileInView" variants={xSmall ? fadeLeft : fadeRight} transition={{duration:1}} className="p-0"> <CardComp
-                            image = "/image (5).png"
+                            image = "/Image (5).png"
                             title="Solar"
                             buttonText="WEB DESIGN" /></motion.div>
                     </Grid2>
