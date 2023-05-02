@@ -4,6 +4,7 @@ import { FiTwitter } from "react-icons/fi";
 import { FaInstagram } from "react-icons/fa";
 import { FaDribbble } from "react-icons/fa";
 import { FaBehance } from "react-icons/fa";
+import {AiOutlineArrowUp} from "react-icons/Ai";
 import styles from "../styles/footer.module.css";
 import localFont from "next/font/local";
 import Link from "next/link";
@@ -68,7 +69,7 @@ export default function Foter() {
                 </Grid2>
             </Grid2>
             <motion.p initial="initial" whileInView="whileInView" variants={fadeIn} transition={{delay:1, duration:1}} className={`text-[13px] ${satoshi.className} relative top-[60px] right-[36%] text-textMuted`}>&copy; {new Date().getFullYear()} Developed by Ayanda Adegbola</motion.p>
-            <motion.div initial="initial" whileInView="whileInView" variants={fadeIn} transition={{delay:1, duration:1}} style={{position: "relative", left:"50%"}} ><Button variant="text" sx={{color: "#DAC5A7"}} href="#" className={`${styles.button} ${satoshi.className} w-[164px] text-[13px]`}>TO TOP<ArrowUpwardIcon className={`${styles.Arrow}`} sx={{color: "#DAC5A7"}} /></Button></motion.div>
+            <motion.div initial="initial" whileInView="whileInView" variants={fadeIn} transition={{delay:1, duration:1}} style={{position: "relative", left:"50%"}} ><Button variant="text" sx={{color: "#DAC5A7"}} href="#" className={`${styles.button} ${satoshi.className} w-[164px] text-[13px]`} endIcon={<ArrowUpwardIcon sx={{ boxSizing: "border-box", background: "rgba(218, 197, 167, 0.05)", border: "1px solid rgba(218, 197, 167, 0.15)", backdropFilter: "blur(15px)", borderRadius: "500px" }} /> } >TO TOP</Button></motion.div>
 
         </>
     )

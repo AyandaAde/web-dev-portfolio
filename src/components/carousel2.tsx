@@ -38,7 +38,7 @@ export default function Carousel2() {
           ]
     };
     return (
-        <motion.div initial="initial" whileInView="whileInView" variants={fadeIn} transition={{duration:1}} className={`${styles.carousel} mt-[15%] w-[100vw] text-beige m-0 p-0`}>
+        <motion.div initial="initial" whileInView="whileInView" variants={fadeIn} transition={{duration:1}} className={`${styles.carousel} mt-[15%] w-[100vw] text-beige p-0`}>
             <Slider {...settings}>
                 <div>
                 <h1>Let&apos;s Talk</h1>
