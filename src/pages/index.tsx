@@ -26,11 +26,11 @@ export default function Home({heading, details}: any) {
       <Section1/>
       <Section2/>
       <Section3/>
-      {/* <Section4/> */}
-      {/* <Section5/> */}
-      {/* <Carousel2/> */}
-      {/* <Cta/> */}
-      {/* <Footer/> */}
+      <Section4/>
+      <Section5/>
+      <Carousel2/>
+      <Cta/>
+      <Footer/>
  
      
     </main>
