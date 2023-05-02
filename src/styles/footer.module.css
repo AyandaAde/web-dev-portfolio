@@ -31,7 +31,7 @@
   backdrop-filter: blur(15px);
   /* Note: backdrop-filter has minimal browser support */
   border-radius: 500px;
-  color: #dac5a7;
+
 }
 
 .button:hover{

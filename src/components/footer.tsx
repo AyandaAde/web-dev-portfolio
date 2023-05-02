@@ -68,7 +68,7 @@ export default function Foter() {
                 </Grid2>
             </Grid2>
             <motion.p initial="initial" whileInView="whileInView" variants={fadeIn} transition={{delay:1, duration:1}} className={`text-[13px] ${satoshi.className} relative top-[60px] right-[36%] text-textMuted`}>&copy; {new Date().getFullYear()} Developed by Ayanda Adegbola</motion.p>
-            <motion.div initial="initial" whileInView="whileInView" variants={fadeIn} transition={{delay:1, duration:1}} style={{position: "relative", left:"50%"}} ><Button variant="text" sx={{color: "#DAC5A7"}} href="#" className={`${styles.button} ${satoshi.className} w-[164px] text-[13px]`}>TO TOP<ArrowUpwardIcon className={`${styles.Arrow}`} /></Button></motion.div>
+            <motion.div initial="initial" whileInView="whileInView" variants={fadeIn} transition={{delay:1, duration:1}} style={{position: "relative", left:"50%"}} ><Button variant="text" sx={{color: "#DAC5A7"}} href="#" className={`${styles.button} ${satoshi.className} w-[164px] text-[13px]`}>TO TOP<ArrowUpwardIcon className={`${styles.Arrow}`} sx={{color: "#DAC5A7"}} /></Button></motion.div>
 
         </>
     )
