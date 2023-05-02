@@ -13,6 +13,7 @@ const gambettaItalic = localFont({ src: "../../public/fonts/Gambetta-Italic.woff
 
 export default function Section2() {
     const small = useMediaQuery("(min-width:600px)");
+    const xSmall = useMediaQuery("(min-width:450px)");
 
     const fadeRight = {
         initial: {
@@ -28,7 +29,7 @@ export default function Section2() {
     const fadeLeft = {
         initial: {
             opacity:0,
-            x:100
+            x:"20vw"
         },
         whileInView:{
             opacity: 1,
@@ -40,30 +41,30 @@ export default function Section2() {
         <Box>
             <Grid2 container sx={{ width: "80vw", margin: "50px 0 0 0" }}>
                 <Grid2 container sx={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", width: "100%" }}>
-                  <motion.div initial = "initial" whileInView="whileInView" variants={fadeRight} transition={{duration:1}} className={`m-0 p-0`}>  <Grid2 sx={{textAlign: "left" }}> <h2 className={`inline-block ${satoshi.className} ${styles.h2}`}>Selected</h2> <h2 className={`inline-block ${gambettaItalic.className} ${styles.h2}`}>Work</h2></Grid2></motion.div>
-                    <motion.div initial = "initial" whileInView="whileInView" variants={fadeLeft} transition={{duration:1}}> <Grid2> <Button variant="text" sx={{ color: "#DAC5A7" }} startIcon={<ArrowOutwardIcon sx={{ boxSizing: "border-box", background: "rgba(218, 197, 167, 0.05)", border: "1px solid rgba(218, 197, 167, 0.15)", backdropFilter: "blur(15px)", borderRadius: "500px" }} />} >See All</Button></Grid2> </motion.div>
+                  <motion.div initial = "initial" whileInView="whileInView" variants={fadeRight} transition={{duration:1}} className="p-0">  <Grid2 sx={{textAlign: "left" }}> <h2 className={`inline-block ${satoshi.className} ${styles.h2}`}>Selected</h2> <h2 className={`inline-block ${gambettaItalic.className} ${styles.h2}`}>Work</h2></Grid2></motion.div>
+                    <motion.div initial = "initial" whileInView="whileInView" variants={fadeLeft} transition={{duration:1}} className="p-0"> <Grid2> <Button variant="text" sx={{ color: "#DAC5A7" }} startIcon={<ArrowOutwardIcon sx={{ boxSizing: "border-box", background: "rgba(218, 197, 167, 0.05)", border: "1px solid rgba(218, 197, 167, 0.15)", backdropFilter: "blur(15px)", borderRadius: "500px" }} />} >See All</Button></Grid2> </motion.div>
                 </Grid2>
                 <Grid2 container spacing={2} sx={{justifyContent:"center"}}>
                     <Grid2>
-                    <motion.div initial="initial" whileInView="whileInView" variants={fadeRight} transition={small ? {delay:0.5, duration:1} : {duration:1}}><CardComp
+                    <motion.div initial="initial" whileInView="whileInView" variants={fadeRight} transition={small ? {delay:0.5, duration:1} : {duration:1}} className="p-0"><CardComp
                             image = "/image (2).png"
                             title="Space"
                             buttonText="WEB DESIGN" /></motion.div>
                     </Grid2>
                     <Grid2>
-                    <motion.div initial="initial" whileInView="whileInView" variants={fadeLeft} transition={small ? {delay:0.5, duration:1} : {duration:1}}> <CardComp
+                    <motion.div initial="initial" whileInView="whileInView" variants={xSmall ? fadeLeft : fadeRight} transition={small ? {delay:0.5, duration:1} : {duration:1}} className="p-0"> <CardComp
                             image = "/image (3).png"
                             title="Nova"
                             buttonText="WEB DESIGN" /></motion.div>
                     </Grid2>
                    <Grid2>
-                   <motion.div initial="initial" whileInView="whileInView" variants={fadeRight} transition={{duration:1}}> <CardComp
+                   <motion.div initial="initial" whileInView="whileInView" variants={fadeRight} transition={{duration:1}} className="p-0"> <CardComp
                             image = "/image (4).png"
                             title="Sonic"
                             buttonText="WEB DESIGN" /></motion.div>
                     </Grid2>
                    <Grid2>
-                   <motion.div initial="initial" whileInView="whileInView" variants={fadeLeft} transition={{duration:1}}> <CardComp
+                   <motion.div initial="initial" whileInView="whileInView" variants={xSmall ? fadeLeft : fadeRight} transition={{duration:1}} className="p-0"> <CardComp
                             image = "/image (5).png"
                             title="Solar"
                             buttonText="WEB DESIGN" /></motion.div>
