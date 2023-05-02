@@ -42,7 +42,7 @@ export default function Section2() {
             <Grid2 container sx={{ width: "80vw", margin: "50px 0 0 0" }}>
                 <Grid2 container sx={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", width: "100%" }}>
                   <motion.div initial = "initial" whileInView="whileInView" variants={fadeRight} transition={{duration:1}} className="p-0">  <Grid2 sx={{textAlign: "left" }}> <h2 className={`inline-block ${satoshi.className} ${styles.h2}`}>Selected</h2> <h2 className={`inline-block ${gambettaItalic.className} ${styles.h2}`}>Work</h2></Grid2></motion.div>
-                    <motion.div initial = "initial" whileInView="whileInView" variants={fadeLeft} transition={{duration:1}} className="p-0"> <Grid2> <Button variant="text" sx={{ color: "#DAC5A7" }} startIcon={<ArrowOutwardIcon sx={{ boxSizing: "border-box", background: "rgba(218, 197, 167, 0.05)", border: "1px solid rgba(218, 197, 167, 0.15)", backdropFilter: "blur(15px)", borderRadius: "500px" }} />} >See All</Button></Grid2> </motion.div>
+                    <motion.div initial = {{opacity:0, x:"10vw"}} whileInView="whileInView" variants={fadeLeft} transition={{duration:1}} className="p-0"> <Grid2> <Button variant="text" sx={{ color: "#DAC5A7" }} startIcon={<ArrowOutwardIcon sx={{ boxSizing: "border-box", background: "rgba(218, 197, 167, 0.05)", border: "1px solid rgba(218, 197, 167, 0.15)", backdropFilter: "blur(15px)", borderRadius: "500px" }} />} >See All</Button></Grid2> </motion.div>
                 </Grid2>
                 <Grid2 container spacing={2} sx={{justifyContent:"center"}}>
                     <Grid2>
