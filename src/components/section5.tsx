@@ -16,13 +16,13 @@ const satoshiLight = localFont({src:"../../public/fonts/Satoshi-Light.woff2"});
 const chillax = localFont({src:"../../public/fonts/Chillax-Regular.woff2"})
 
 export default function Section5(){
-    const small = useMediaQuery("(min-width:600px)");
+    const small = useMediaQuery("(min-width:765px)");
 
     return(
         <Box>
             <Grid2 container className="text-beige" sx={{width:"100vw", justifyContent: "center"}}>
                 <Grid2 container sx={{position:"relative", left:"-17%" , height:"55vw" , display: {xs:"none", md:"flex"}, flexDirection:"row"}}>
-                    <motion.h1 initial="initial" whileInView="whileInView" variants={fadeRight} transition={{duration:1}} className={`${gambettaLightItalic.className} p-0 relative mt-[49%] left-[5%] text-[6vw]`}>Andersson</motion.h1>
+                    <motion.h1 initial="initial" whileInView="whileInView" variants={fadeLeft} transition={{duration:1}} className={`${gambettaLightItalic.className} p-0 relative mt-[49%] left-[5%] text-[6vw]`}>Andersson</motion.h1>
                    <motion.div initial="initial" whileInView="whileInView" variants={fadeIn} transition={{duration:1}}> <Image
                     src="/Andersson.png"
                     width={880}
@@ -30,7 +30,7 @@ export default function Section5(){
                     alt="Andersson"
                     className="mix-blend-lighten absolute width-[60%] left-[23%] top-[29px]"
                     /></motion.div>
-                    <motion.h1 initial="initial" whileInView="whileInView" variants={fadeLeft} transition={{duration:1}} className={`${satoshiLight.className} p-0 relative mt-[49%] left-[53%] text-[6vw]`}>Arik <span className={`${gambettaLightItalic.className}`}>Andersson</span></motion.h1>
+                    <motion.h1 initial= "initial" whileInView="whileInView" variants={fadeRight} transition={{duration:1}} className={`${satoshiLight.className} p-0 relative mt-[49%] left-[53%] text-[6vw]`}>Arik <span className={`${gambettaLightItalic.className}`}>Andersson</span></motion.h1>
 
                 </Grid2>
                 <Grid2 container sx={{position:"relative", height:"100vw", width: "100vw", textAlign: "center" , display: {xs:"block", md:"none"}, marginBottom: "40px"}}>

@@ -22,6 +22,7 @@ const chillax = localFont({ src: "../../public/fonts/Chillax-Regular.woff2" });
 
 export default function Section3() {
     const small = useMediaQuery("(min-width: 600px)");
+    const xSmall = useMediaQuery("(min-width:340px)");
     const fadeUp = {
         initial: {
             opacity: 0,
@@ -34,10 +35,20 @@ export default function Section3() {
             rotate: 0
         },
     }
+    const fadeUp2 = {
+        initial: {
+            opacity: 0,
+            y: 50,
+        },
+        whileInView: {
+            opacity: 1,
+            y: 0,
+        },
+    }
     const fadeLeft = {
         initial: {
             opacity: 0,
-            x: 100,
+            x: 20,
         },
         whileInView: {
             opacity: 1,
@@ -47,7 +58,7 @@ export default function Section3() {
     const fadeRight = {
         initial: {
             opacity: 0,
-            x: -100,
+            x: -20,
         },
         whileInView: {
             opacity: 1,
@@ -65,9 +76,9 @@ export default function Section3() {
     return (
         <Box sx={{ width: { xs: "300px", md: "100%" }, display: "flex", flexDirection: "column", alignItems: "center", margin: "150px 0 0 0" }}>
             <Box sx={{ width: { xs: "300px", md: "710px" } }} className={`${satoshi.className} text-beige text-center`}>
-                <motion.p initial="initial" whileInView="whileInView" variants={fadeUp} transition={{ duration: 1 }} className={`text-[13px] leading-[160%] tracking-[1.5px]`}>THE PROCESS</motion.p>
-                <motion.h1 initial="initial" whileInView="whileInView" variants={fadeUp} transition={small ? { duration: 1, delay: 0.5 } : { duration: 1 }} className={`${satoshiLight.className} leading=[100%] text-[70px] sm:text-[128px] font-light`}>Your Website <span className={`${gambettaLightItalic.className} font-light`}>in 5 Steps</span></motion.h1>
-                <motion.p initial="initial" whileInView="whileInView" variants={fadeUp} transition={{ duration: 1 }} className={`${chillax.className} muted-text text-[20px] leading-[170%]`}>Our process ensures that we create a website tailored to your business needs.</motion.p>
+                <motion.p initial="initial" whileInView="whileInView" variants={xSmall ? fadeUp : fadeUp2} transition={{ duration: 1 }} className={`text-[13px] leading-[160%] tracking-[1.5px]`}>THE PROCESS</motion.p>
+                <motion.h1 initial="initial" whileInView="whileInView" variants={xSmall ? fadeUp : fadeUp2} transition={small ? { duration: 1, delay: 0.5 } : { duration: 1 }} className={`${satoshiLight.className} leading=[100%] text-[70px] sm:text-[128px] font-light`}>Your Website <span className={`${gambettaLightItalic.className} font-light`}>in 5 Steps</span></motion.h1>
+                <motion.p initial="initial" whileInView="whileInView" variants={xSmall ? fadeUp : fadeUp2} transition={{ duration: 1 }} className={`${chillax.className} muted-text text-[20px] leading-[170%]`}>Our process ensures that we create a website tailored to your business needs.</motion.p>
             </Box>
             <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }}><Timeline position="alternate" sx={{ display: { xs: "none", md: "block" } }}>
                 <TimelineItem>
@@ -94,7 +105,7 @@ export default function Section3() {
                         /></motion.div>
                     </TimelineOppositeContent>
                     <TimelineSeparator>
-                        <TimelineDot sx={{ background: "rgba(218, 197, 167, 0.05)", width: "40px", height: "40px", border: "1px solid rgba(218, 197, 167, 0.15)", borderRadius: "500px", padding: " 8px 8px" }} variant="outlined">
+                        <TimelineDot sx={{ background: "rgba(218, 197, 167, 0.05)", width: "40px", height: "40px", border: "1px solid rgba(218, 197, 167, 0.15)", borderRadius: "500px", padding: " 8px 9px" }} variant="outlined">
                             <p className={`${satoshi.className} text=[13px] tracking-[1.5px] text-beige`}>01</p>
                         </TimelineDot>
                         <TimelineConnector sx={{ width: "1px", background: "rgba(218, 197, 167, 0.15)" }} />
@@ -189,7 +200,7 @@ export default function Section3() {
             </Timeline></motion.div>
             <Grid2 container sx={{ position: "relative", display: { md: "none" }, margin:"0", padding: "0"}}>
                 <Grid2 sx={{ width: { xs: "90vw", sm: "90vw" }, display: "flex", flexDirection: "column", alignItems: "center" }}>
-                    <div style={{ position: "relative", marginBottom: "10px", background: "rgba(218, 197, 167, 0.05)", width: "40px", height: "40px", border: "1px solid rgba(218, 197, 167, 0.15)", borderRadius: "500px", padding: " 8px 8px" }}>
+                    <div style={{ position: "relative", marginBottom: "10px", background: "rgba(218, 197, 167, 0.05)", width: "40px", height: "40px", border: "1px solid rgba(218, 197, 167, 0.15)", borderRadius: "500px", padding: " 8px 9px" }}>
                         <p className={`${satoshi.className} text=[13px] tracking-[1.5px] text-beige`}>01</p>
                     </div>
                     <div style={{ height: "40px", marginBottom: "10px", width: "1px", background: "rgba(218, 197, 167, 0.15)" }} />
