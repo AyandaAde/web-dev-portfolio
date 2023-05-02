@@ -7,6 +7,7 @@ import Button from "react-bootstrap/Button";
 import SSRProvider from 'react-bootstrap/SSRProvider';
 import localFont from "next/font/local";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const satoshiRegular = localFont({src: "../../public/fonts/Satoshi-Regular.woff2"});
 
@@ -25,7 +26,7 @@ export default function NavBar() {
             }
             `}
         </style>
-    <Navbar expand="lg" className={`${styles.navigation} ${styles.navbar}`}>
+   <motion.div initial={{opacity: 0}} animate={{opacity:1}} transition={{ duration: 1, ease:"easeOut"}}><Navbar expand="lg" className={`${styles.navigation} ${styles.navbar}`}>
       <Container>
         <Navbar.Brand className={`${styles.navbarBrand}`} href="#home"><Image src="/Logo.svg" width={52.17} height={20} alt='logo'></Image></Navbar.Brand>
         <Navbar.Toggle className={`${styles.navbarToggler}`} aria-controls="basic-navbar-nav" />
@@ -49,7 +50,7 @@ export default function NavBar() {
           </Nav>
         </Navbar.Collapse>
       </Container>
-    </Navbar>
+    </Navbar></motion.div> 
     </SSRProvider>
   );
 }

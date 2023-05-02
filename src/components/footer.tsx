@@ -9,6 +9,8 @@ import localFont from "next/font/local";
 import Link from "next/link";
 import Button from '@mui/material/Button';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+import {motion} from "framer-motion";
+import {fadeIn, fadeRight} from "./animations";
 
 const satoshi = localFont({src:"../../public/fonts/Satoshi-Regular.woff2"});
 
@@ -18,55 +20,55 @@ export default function Foter() {
             <Grid2 container spacing={2} sx={{marginTop:"22.5%", width:"93%", justifyContent:"space-between"}} className={`text-[13px] ${satoshi.className}`}>
                 <Grid2 container sx={{ flexDirection: "column", marginRight:{xs:"0",md:"100px"}, marginBottom:"10px"}} className={`text-textMuted`}>
                     <Grid2>
-                        <Image
+                        <motion.div initial="initial" whileInView="whileInView" variants={fadeIn} transition={{duration:1}}><Image
                             src="/Logo.svg"
                             width={100}
                             height={100}
                             alt="logo"
-                        />
+                        /></motion.div>
                     </Grid2>
                     <Grid2 container sx={{alignItems:"center", flexDirection:"row"}}>
-                        <FaInstagram className={`${styles.icon}`} />
-                        <Link href="#" className={`link text-[10px] sm:text-[13px] ${satoshi.className}`}>INSTAGRAM</Link>
+                    <motion.div initial={{opacity:0, x:-50}} whileInView="whileInView" variants={fadeRight} transition={{duration:1, delay:0.3}}><FaInstagram className={`${styles.icon}`} /></motion.div>
+                    <motion.div initial={{opacity:0, x:-50}} whileInView="whileInView" variants={fadeRight} transition={{duration:1, delay:0.3}}><Link href="#" className={`link text-[10px] sm:text-[13px] ${satoshi.className}`}>INSTAGRAM</Link></motion.div>
                     </Grid2>
                     <Grid2 container sx={{alignItems:"center"}}>
-                        <FiTwitter className={`${styles.icon}`} />
-                        <Link href="#" className={`link text-[10px] sm:text-[13px] ${satoshi.className}`}>TWITTER</Link>
+                    <motion.div initial={{opacity:0, x:-50}} whileInView="whileInView" variants={fadeRight} transition={{duration:1, delay:0.4}}><FiTwitter className={`${styles.icon}`} /></motion.div>
+                    <motion.div initial={{opacity:0, x:-50}} whileInView="whileInView" variants={fadeRight} transition={{duration:1, delay:0.4}}><Link href="#" className={`link text-[10px] sm:text-[13px] ${satoshi.className}`}>TWITTER</Link></motion.div>
                     </Grid2>
                     <Grid2 container sx={{alignItems:"center"}}>
-                        <FaDribbble className={`${styles.icon}`} />
-                        <Link href="#" className={`link text-[10px] sm:text-[13px] ${satoshi.className}`}>DRIBBBLE</Link>
+                    <motion.div initial={{opacity:0, x:-50}} whileInView="whileInView" variants={fadeRight} transition={{duration:1, delay:0.5}}><FaDribbble className={`${styles.icon}`} /></motion.div>
+                    <motion.div initial={{opacity:0, x:-50}} whileInView="whileInView" variants={fadeRight} transition={{duration:1, delay:0.5}}><Link href="#" className={`link text-[10px] sm:text-[13px] ${satoshi.className}`}>DRIBBBLE</Link></motion.div>
                     </Grid2>
                     <Grid2 container sx={{alignItems:"center"}}>
-                        <FaBehance className={`${styles.icon}`} />
-                        <Link href="#" className={`link text-[10px] sm:text-[13px] ${satoshi.className}`}>BEHANCE</Link>
+                    <motion.div initial={{opacity:0, x:-50}} whileInView="whileInView" variants={fadeRight} transition={{duration:1, delay:0.6}}><FaBehance className={`${styles.icon}`} /></motion.div>
+                    <motion.div initial={{opacity:0, x:-50}} whileInView="whileInView" variants={fadeRight} transition={{duration:1, delay:0.6}}><Link href="#" className={`link text-[10px] sm:text-[13px] ${satoshi.className}`}>BEHANCE</Link></motion.div>
                     </Grid2>
                 </Grid2>
                 <Grid2 container sx={{ flexDirection: "column", marginBottom:"10px" }} className={`text-textMuted`}>
-                    <h4 className={`text-beige`}>Pages</h4>
-                    <Link className={`link`} href="#">HOME</Link>
-                    <Link className={`link`} href="#">SERVICES</Link>
-                    <Link className={`link`} href="#">ABOUT</Link>
-                    <Link className={`link`} href="#">CONTACT</Link>
+                    <motion.h4 initial="initial" whileInView="whileInView" variants={fadeIn} transition={{duration:1}}  className={`text-beige`}>Pages</motion.h4>
+                    <motion.div initial={{opacity:0, x:-50}} whileInView="whileInView" variants={fadeRight} transition={{duration:1, delay:0.3}}><Link className={`link`} href="#">HOME</Link></motion.div>
+                    <motion.div initial={{opacity:0, x:-50}} whileInView="whileInView" variants={fadeRight} transition={{duration:1, delay:0.4}}><Link className={`link`} href="#">SERVICES</Link></motion.div>
+                    <motion.div initial={{opacity:0, x:-50}} whileInView="whileInView" variants={fadeRight} transition={{duration:1, delay:0.5}}><Link className={`link`} href="#">ABOUT</Link></motion.div>
+                    <motion.div initial={{opacity:0, x:-50}} whileInView="whileInView" variants={fadeRight} transition={{duration:1, delay:0.6}}><Link className={`link`} href="#">CONTACT</Link></motion.div>
                 </Grid2>
                 <Grid2 container sx={{ flexDirection: "column", marginBottom:"10px" }} className={`text-texttMuted`}>
-                <h4 className={`text-beige`}>CMS</h4>
-                    <Link className={`link`} href="#">WORK</Link>
-                    <Link className={`link`} href="#">WORK SINGLE</Link>
-                    <Link className={`link`} href="#">BLOG</Link>
-                    <Link className={`link`} href="#">BLOG POST</Link>
+                <motion.h4 initial="initial" whileInView="whileInView" variants={fadeIn} transition={{duration:1}}  className={`text-beige`}>CMS</motion.h4>
+                    <motion.div initial={{opacity:0, x:-50}} whileInView="whileInView" variants={fadeRight} transition={{duration:1, delay:0.3}}><Link className={`link`} href="#">WORK</Link></motion.div>
+                    <motion.div initial={{opacity:0, x:-50}} whileInView="whileInView" variants={fadeRight} transition={{duration:1, delay:0.4}}><Link className={`link`} href="#">WORK SINGLE</Link></motion.div>
+                    <motion.div initial={{opacity:0, x:-50}} whileInView="whileInView" variants={fadeRight} transition={{duration:1, delay:0.5}}><Link className={`link`} href="#">BLOG</Link></motion.div>
+                    <motion.div initial={{opacity:0, x:-50}} whileInView="whileInView" variants={fadeRight} transition={{duration:1, delay:0.6}}><Link className={`link`} href="#">BLOG POST</Link></motion.div>
                 </Grid2>
                 <Grid2 container sx={{ flexDirection: "column" }} className={`text-textMuted`}>
-                <h4 className={`text-beige`}>Utility Pages</h4>
-                    <Link className={`link`} href="#">404 ERROR PAGE</Link>
-                    <Link className={`link`} href="#">PASSWORD PROTECTED</Link>
-                    <Link className={`link`} href="#">STYLE GUIDE</Link>
-                    <Link className={`link`} href="#">LICENSING</Link>
-                    <Link className={`link`} href="#">CHANGELOG</Link>
+                <motion.h4 initial="initial" whileInView="whileInView" variants={fadeIn} transition={{duration:1}}  className={`text-beige`}>Utility Pages</motion.h4>
+                    <motion.div initial={{opacity:0, x:-50}} whileInView="whileInView" variants={fadeRight} transition={{duration:1, delay:0.3}}><Link className={`link`} href="#">404 ERROR PAGE</Link></motion.div>
+                    <motion.div initial={{opacity:0, x:-50}} whileInView="whileInView" variants={fadeRight} transition={{duration:1, delay:0.4}}><Link className={`link`} href="#">PASSWORD PROTECTED</Link></motion.div>
+                    <motion.div initial={{opacity:0, x:-50}} whileInView="whileInView" variants={fadeRight} transition={{duration:1, delay:0.5}}><Link className={`link`} href="#">STYLE GUIDE</Link></motion.div>
+                    <motion.div initial={{opacity:0, x:-50}} whileInView="whileInView" variants={fadeRight} transition={{duration:1, delay:0.6}}><Link className={`link`} href="#">LICENSING</Link></motion.div>
+                    <motion.div initial={{opacity:0, x:-50}} whileInView="whileInView" variants={fadeRight} transition={{duration:1, delay:0.7}}><Link className={`link`} href="#">CHANGELOG</Link></motion.div>
                 </Grid2>
             </Grid2>
-            <p className={`text-[13px] ${satoshi.className} relative top-[60px] right-[36%] text-textMuted`}>&copy; {new Date().getFullYear()} Developed by Ayanda Adegbola</p>
-            <Button variant="text" sx={{color: "#DAC5A7", position: "relative", left:"50%"}} href="#" className={`${styles.button} ${satoshi.className} w-[164px] text-[13px]`}>TO TOP<ArrowUpwardIcon className={`${styles.Arrow}`} /></Button>
+            <motion.p initial="initial" whileInView="whileInView" variants={fadeIn} transition={{delay:1, duration:1}} className={`text-[13px] ${satoshi.className} relative top-[60px] right-[36%] text-textMuted`}>&copy; {new Date().getFullYear()} Developed by Ayanda Adegbola</motion.p>
+            <motion.div initial="initial" whileInView="whileInView" variants={fadeIn} transition={{delay:1, duration:1}} style={{position: "relative", left:"50%"}} ><Button variant="text" sx={{color: "#DAC5A7"}} href="#" className={`${styles.button} ${satoshi.className} w-[164px] text-[13px]`}>TO TOP<ArrowUpwardIcon className={`${styles.Arrow}`} /></Button></motion.div>
 
         </>
     )

@@ -1,10 +1,11 @@
-
 import React, { Component } from "react";
 import Slider from "react-slick";
 import Image from "next/image";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styles from "../styles/carousel2.module.css";
+import {motion} from "framer-motion";
+import {fadeIn} from "./animations";
 
 export default function Carousel2() {
 
@@ -37,7 +38,7 @@ export default function Carousel2() {
           ]
     };
     return (
-        <div className={`${styles.carousel} mt-[15%] w-[100vw] text-beige`}>
+        <motion.div initial="initial" whileInView="whileInView" variants={fadeIn} transition={{duration:1}} className={`${styles.carousel} mt-[15%] w-[100vw] text-beige m-0 p-0`}>
             <Slider {...settings}>
                 <div>
                 <h1>Let&apos;s Talk</h1>
@@ -83,6 +84,6 @@ export default function Carousel2() {
                 </div>
                 
             </Slider>
-        </div>
+        </motion.div>
     );
 }

@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import Image from "next/image";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import {motion} from "framer-motion";
 
 export default function Carousel() {
  
@@ -36,7 +37,7 @@ export default function Carousel() {
       ]
     };
     return (
-      <div className="bg-black w-[93%]">
+      <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:2}} className="bg-black w-[93%]">
         <Slider {...settings}>
           <div className="w-[100px]">
           <Image src="/logo (6).svg" className="w-[75%] sm:w-[50%]" width={91.91} height={21.38} alt="client logo"/>
@@ -57,6 +58,6 @@ export default function Carousel() {
             <Image src="/logo (5).svg" className="" width={35.45} height={30} alt="client logo"/>
           </div>
         </Slider>
-      </div>
+      </motion.div>
     );
   }

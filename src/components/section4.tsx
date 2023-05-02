@@ -3,22 +3,26 @@ import Grid2 from "@mui/material/Unstable_Grid2";
 import localFont from "next/font/local";
 import Card4 from "./card4";
 import Card5 from "./card5";
+import {motion} from "framer-motion";
+import {fadeUp, fadeLeft, fadeRight} from "./animations";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const satoshiLight = localFont({src:"../../public/fonts/Satoshi-Light.woff2"});
 const gambettaLightItalic = localFont({src:"../../public/fonts/Gambetta-LightItalic.woff2"});
 const chillax = localFont({src: "../../public/fonts/Chillax-Regular.woff2"});
 
 export default function Section4(){
+    const large = useMediaQuery("(min-width:1188px)")
     return(
         <Box>
-            <Grid2 spacing={3} container sx={{justifyContent: "center", margintop:{xs:"50px", md:"0"}}}>
+            <Grid2 spacing={3} container sx={{justifyContent: "center", margintop:{xs:"50px", md:"0"}, gap:"20px"}}>
                 <Grid2 sx={{textAlign:"center", paddingX:{sx:"0",md:"300px"}}}>
-                <h1 className={`text-beige ${satoshiLight.className} text-[70px] sm:text-[96px] leading-[100%]`}> What my <span className={`${gambettaLightItalic.className}`}>clients say</span></h1>
-                <p className={`${chillax.className} text-textMuted text-[15px] sm:text-[18px] leading-[160%]`}>See what my clients have to say about working with me and the results I helped them achieve</p>
+                <motion.h1 initial="initial" whileInView="whileInView" variants={fadeUp} transition={{duration:1}} className={`text-beige ${satoshiLight.className} p-0 text-[70px] sm:text-[96px] leading-[100%]`}> What my <span className={`${gambettaLightItalic.className}`}>clients say</span></motion.h1>
+                <motion.p initial="initial" whileInView="whileInView" variants={fadeUp} transition={{duration:1}} className={`${chillax.className} p-0 text-textMuted text-[15px] sm:text-[18px] leading-[160%]`}>See what my clients have to say about working with me and the results I helped them achieve</motion.p>
                 </Grid2>
                 <Grid2 container spacing={3} sx={{padding:"0" , display: "flex", flexDirection: "column"}}>
                 <Grid2>
-                    <Card4
+                    <motion.div initial="initial" whileInView="whileInView" variants={fadeRight} transition={{duration:1, delay:0.5}} className="p-0"><Card4
                     image="logo (2).svg"
                     width = {30}
                     height = {20}
@@ -27,10 +31,10 @@ export default function Section4(){
                     image2 = "/Image Wrapper (1).png"
                     clientName = "JOHN SMITH"
                     company = "ABC Company"
-                    />
+                    /></motion.div>
                 </Grid2>
                 <Grid2>
-                    <Card4
+                <motion.div initial="initial" whileInView="whileInView" variants={large ? fadeRight : fadeLeft} transition={{duration:1}} className="p-0"><Card4
                     image="logo7.svg"
                     width = {116.67}
                     height = {25}
@@ -39,10 +43,10 @@ export default function Section4(){
                     image2 = "/Image Wrapper (3).png"
                     clientName = "Karen Lee"
                     company = "Redwood Technologies"
-                    />
+                    /></motion.div>
                 </Grid2>
                 <Grid2>
-                    <Card4
+                <motion.div initial="initial" whileInView="whileInView" variants={fadeRight} transition={{duration:1}} className="p-0"><Card4
                     image="logo (3).svg"
                     width = {52}
                     height = {20}
@@ -51,12 +55,12 @@ export default function Section4(){
                     image2 = "/Image Wrapper (5).png"
                     clientName = "Emily Davis"
                     company = "Greenway Industries"
-                    />
+                    /></motion.div>
                 </Grid2>
                     </Grid2>
                <Grid2 container spacing={3} sx={{padding:"0", display: "flex", flexDirection: "column"}}>
                <Grid2>
-                    <Card5
+               <motion.div initial="initial" whileInView="whileInView" variants={fadeLeft} transition={{duration:1, delay:0.5}} className="p-0"><Card5
                     image="logo (5).svg"
                     width = {23.64}
                     height = {20}
@@ -65,11 +69,11 @@ export default function Section4(){
                     image2 = "/Image Wrapper (2).png"
                     clientName = "David Kim"
                     company = "Design Inc."
-                    />
+                    /></motion.div>
                 </Grid2>
                 
                 <Grid2>
-                    <Card5
+                <motion.div initial="initial" whileInView="whileInView" variants={large ? fadeLeft : fadeRight} transition={{duration:1}} className="p-0"><Card5
                     image="logo8.svg"
                     width = {113.14}
                     height = {30}
@@ -78,11 +82,11 @@ export default function Section4(){
                     image2 = "/Image Wrapper (4).png"
                     clientName = "Andrew Thompson"
                     company = "Silverstone Corporation"
-                    />
+                    /></motion.div>
                 </Grid2>
                
                 <Grid2>
-                    <Card5
+                <motion.div initial="initial" whileInView="whileInView" variants={fadeLeft} transition={{duration:1}} className="p-0"><Card5
                     image="logo9.svg"
                     width = {79.33}
                     height = {20}
@@ -91,7 +95,7 @@ export default function Section4(){
                     image2 = "/Image Wrapper (6).png"
                     clientName = "Ryan Chen"
                     company = "Golden Gate Solutions"
-                    />
+                    /></motion.div>
                 </Grid2>
                </Grid2>                
             </Grid2>
