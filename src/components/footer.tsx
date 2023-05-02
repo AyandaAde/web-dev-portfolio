@@ -4,7 +4,6 @@ import { FiTwitter } from "react-icons/fi";
 import { FaInstagram } from "react-icons/fa";
 import { FaDribbble } from "react-icons/fa";
 import { FaBehance } from "react-icons/fa";
-import {AiOutlineArrowUp} from "react-icons/Ai";
 import styles from "../styles/footer.module.css";
 import localFont from "next/font/local";
 import Link from "next/link";
