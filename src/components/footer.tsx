@@ -67,7 +67,7 @@ export default function Foter() {
                     <motion.div initial={{opacity:0, x:-50}} whileInView="whileInView" variants={fadeRight} transition={{duration:1, delay:0.7}}><Link className={`link`} href="#">CHANGELOG</Link></motion.div>
                 </Grid2>
             </Grid2>
-            <motion.p initial="initial" whileInView="whileInView" variants={fadeIn} transition={{delay:1, duration:1}} className={`text-[13px] ${satoshi.className} relative top-[60px] right-[36%] text-textMuted`}>&copy; {new Date().getFullYear()} Developed by Ayanda Adegbola</motion.p>
+            <motion.p initial="initial" whileInView="whileInView" variants={fadeIn} transition={{delay:1, duration:1}} className={`text-[13px] ${satoshi.className} relative top-[60px] right-[36%] text-textMuted`}>&copy; {new Date().getFullYear()} Developed by Ayanda Kinyambo</motion.p>
             <motion.div initial="initial" whileInView="whileInView" variants={fadeIn} transition={{delay:1, duration:1}} style={{position: "relative", left:"50%"}} ><Button variant="text" sx={{color: "#DAC5A7"}} href="#" className={`${styles.button} ${satoshi.className} w-[164px] text-[13px]`} endIcon={<ArrowUpwardIcon sx={{ boxSizing: "border-box", background: "rgba(218, 197, 167, 0.05)", border: "1px solid rgba(218, 197, 167, 0.15)", backdropFilter: "blur(15px)", borderRadius: "500px" }} /> } >TO TOP</Button></motion.div>
 
         </>
