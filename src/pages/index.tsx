@@ -31,8 +31,6 @@ export default function Home({heading, details}: any) {
       <Carousel2/>
       <Cta/>
       <Footer/>
- 
-     
     </main>
   )
 }
